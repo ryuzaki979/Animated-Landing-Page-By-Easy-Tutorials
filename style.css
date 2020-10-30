@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 10px;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+ul{
+    list-style: none;
+}
+img{
+    width: 100%;
+}
+.header{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(/image/background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+.top-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 15vh;
+}
+.logo-div{
+width: 120px;
+}
+.sign-up-btn a,
+.main-content a{
+    border: 1px solid white;
+    border-radius: 1.5rem;
+    padding:.5rem 1rem;
+}
+
+.side-navbar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #08214079;
+    width: 2.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.side-navbar img {
+    width: 75%;
+    cursor: pointer;
+    margin: 1rem 0;
+}
+
+.main-content{
+    width: 50%;
+    padding: 5rem 0;
+    color: white;
+}
+.main-content h6{
+    font-size: .75rem;
+}
+.main-content h1{
+    font-size: 5rem;
+    margin: 1rem 0;
+}
+
+.bubble .small {
+    width: 15px;
+    height: 15px;
+}
+.bubble .big {
+    width: 70px;
+    height: 70px;
+}
+.bubble .medium {
+    width: 40px;
+    height: 40px;
+}
+.bubble{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: space-between; 
+    bottom: -15vh;
+}
+
+
+@keyframes animate{
+    0%{
+        transform: translateY(0vh);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-101vh);
+        opacity: 0;
+    }
+}
+.bubble img{
+    animation: animate 5s linear infinite alternate;
+}
+.bubble img:nth-child(1){
+    animation-delay: 2s;
+}
+.bubble img:nth-child(2){
+    animation-delay: 4s;
+}
+.bubble img:nth-child(3){
+    animation-delay: 2s;
+}
+.bubble img:nth-child(4){
+    animation-delay: 4s;
+}
+.bubble img:nth-child(5){
+    animation-delay: 3s;
+}
+.bubble img:nth-child(6){
+    animation-delay: .5s;
+}
+.bubble img:nth-child(7){
+    animation-delay: 3s;
+}
+.bubble img:nth-child(8){
+    animation-delay: .5s;
+}
+.bubble img:nth-child(9){
+    animation-delay: 1s;
+}
